@@ -1,10 +1,8 @@
-
-
 let count = 0
 let countEl = document.getElementById("count-el")
 let prevSaves = document.getElementById("last-saves")
 
-prevSaves.innerText = "Prev saves: "
+prevSaves.textContent = "Prev saves: "
 
 function increment() {
     count += 1
@@ -12,5 +10,5 @@ function increment() {
 }
 
 function save() {
-    prevSaves.innerText += count + " - "
+    prevSaves.textContent += count + " - "
 }

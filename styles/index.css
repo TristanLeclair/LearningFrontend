@@ -32,9 +32,7 @@ img {
 }
 
 body {
-    background-image: url("../img/station.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("../img/station.jpg") no-repeat center center fixed;
     font-family: 'mononoki_nfregular';
     font-weight: bold;
     text-align: center;
@@ -54,9 +52,10 @@ h2 {
 
 button {
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     color: white;
+    font-family: 'mononoki_nfregular';
     font-weight: bold;
     width: 200px;
     margin-bottom: 5px;
@@ -70,6 +69,7 @@ button:hover {
 
 .boo {
     color: indigo;
+    padding-bottom: 500px;
 }
 
 #increment-btn {

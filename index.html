@@ -1,16 +1,46 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
 </head>
-
 <body>
-    <h1>People entered:</h1>
-    <h2 id="count-el">0</h2>
-    <button id="increment-btn" onclick="increment()">INCREMENT</button>
-    <button id="save-btn" onclick="save()">SAVE </button>
-    <p class="boo" id="last-saves"></p>
-    <script src="scripts/index.js"></script>
-</body>
+    <div class="hero">
+        <header>
+            <a href="#" class="logo">Tristan <span>Leclair-Vani</span></a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+    </div>
 
+    <div class="person-counter">
+        <h1>People entered:</h1>
+        <h2 id="count-el">0</h2>
+        <button class="increment-btn" onclick="increment()">INCREMENT</button>
+        <button class="save-btn" onclick="save()">SAVE </button>
+        <p class="boo" id="last-saves"></p>
+        <script src="scripts/index.js"></script>
+    </div>
+
+    <div class="intro-page">
+        <h1>Hi there, I'm Tristan</h1>
+        <h2>I'm a second year computer science student at McGill University</h2>
+        <p>
+            Hi jenna my love, how are you today?
+        </p>
+    </div>
+</body>
 </html>

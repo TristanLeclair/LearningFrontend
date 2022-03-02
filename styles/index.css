@@ -2,7 +2,7 @@
     font-family: 'mononoki_nfbold';
     src: url('mononoki_bold_nerd_font_complete_mono_windows_compatible-webfont.woff2') format('woff2'),
         url('mononoki_bold_nerd_font_complete_mono_windows_compatible-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
@@ -12,7 +12,7 @@
     src: url('mononoki_italic_nerd_font_complete_mono_windows_compatible-webfont.woff2') format('woff2'),
         url('mononoki_italic_nerd_font_complete_mono_windows_compatible-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 
 }
 
@@ -25,23 +25,33 @@
 
 }
 
-
-
-img {
-    width: 100%;
+html {
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    width: 100vw;
+    font-family: 'Work Sans', sans-serif;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+}
+
+.person-counter {
+    height: 100vh;
     background: url("../img/station.jpg") no-repeat center center fixed;
-    font-family: 'mononoki_nfregular';
     font-weight: bold;
     text-align: center;
+    font-family: 'mononoki_nfregular';
 }
 
 h1 {
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h2 {
@@ -55,8 +65,7 @@ button {
     padding-top: 9px;
     padding-bottom: 9px;
     color: white;
-    font-family: 'mononoki_nfregular';
-    font-weight: bold;
+    font-family: 'mononoki_nfbold';
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -72,19 +81,18 @@ button:hover {
     padding-bottom: 500px;
 }
 
-#increment-btn {
+.increment-btn {
     background: darkred;
-
 }
 
-#increment-btn:hover {
+.increment-btn:hover {
     background-color: firebrick;
 }
 
-#save-btn {
+.save-btn {
     background: darkgreen;
 }
 
-#save-btn:hover {
+.save-btn:hover {
     background-color: green;
 }
